@@ -1,10 +1,10 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import { services, getService, SITE_URL, SITE_NAME } from '@/lib/pages';
+import { allServices, getService, SITE_URL, SITE_NAME } from '@/lib/pages';
 
 export function generateStaticParams() {
-  return services.map((s) => ({ slug: s.slug }));
+  return allServices.map((s) => ({ slug: s.slug }));
 }
 
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
@@ -35,7 +35,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
   if (!service) notFound();
 
   const relatedServices = service.related
-    .map((slug) => services.find((s) => s.slug === slug))
+    .map((slug) => allServices.find((s) => s.slug === slug))
     .filter(Boolean);
 
   const jsonLd = {

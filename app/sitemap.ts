@@ -1,5 +1,5 @@
 import { MetadataRoute } from 'next';
-import { SITE_URL, services, staticPages } from '@/lib/pages';
+import { SITE_URL, allServices, staticPages } from '@/lib/pages';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticEntries = staticPages.map((p) => ({
@@ -9,7 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: p.priority,
   }));
 
-  const serviceEntries = services.map((s) => ({
+  const serviceEntries = allServices.map((s) => ({
     url: `${SITE_URL}/hizmetler/${s.slug}`,
     lastModified: new Date(),
     changeFrequency: s.changefreq,

@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Marquee from '@/components/Marquee';
-import { services } from '@/lib/pages';
+import ContactForm from '@/components/ContactForm';
+import { services, supportServices } from '@/lib/pages';
 
 export default function HomePage() {
   return (
@@ -105,6 +106,29 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section id="destek-hizmetleri">
+        <div className="section-head">
+          <div>
+            <div className="section-tag upper">Destek Hizmetleri</div>
+            <h2 className="upper">
+              Etkinliği
+              <br />
+              Tamamlayanlar.
+            </h2>
+          </div>
+          <p>Rehberlik, transfer ve kültürel programlarla etkinliğin her adımını kapsıyoruz.</p>
+        </div>
+        <div className="services-grid">
+          {supportServices.map((s, i) => (
+            <Link key={s.slug} href={`/hizmetler/${s.slug}`} className="svc-card">
+              <div className="num">{String.fromCharCode(65 + i)}</div>
+              <h3 className="upper">{s.heroTitle}</h3>
+              <p>{s.description}</p>
+            </Link>
+          ))}
+        </div>
+      </section>
+
       <Marquee
         speed="slow"
         items={[
@@ -125,37 +149,7 @@ export default function HomePage() {
             </h2>
           </div>
         </div>
-        <form className="contact-form" action="/api/iletisim" method="post">
-          <div className="contact-row">
-            <div className="field">
-              <label className="upper">Ad Soyad</label>
-              <input type="text" name="ad_soyad" placeholder="Adınız" required />
-            </div>
-            <div className="field">
-              <label className="upper">Firma</label>
-              <input type="text" name="firma" placeholder="Firma Adı" />
-            </div>
-          </div>
-          <div className="contact-row">
-            <div className="field">
-              <label className="upper">E-posta</label>
-              <input type="email" name="eposta" placeholder="ornek@firma.com" required />
-            </div>
-            <div className="field">
-              <label className="upper">Etkinlik Türü</label>
-              <input type="text" name="etkinlik_turu" placeholder="Kongre / Lansman / Toplantı" />
-            </div>
-          </div>
-          <div className="field">
-            <label className="upper">Projenizi Anlatın</label>
-            <textarea name="mesaj" rows={2} placeholder="Kısaca anlatın" />
-          </div>
-          <div>
-            <button type="submit" className="btn btn-primary upper">
-              Projeyi Gönder →
-            </button>
-          </div>
-        </form>
+        <ContactForm />
       </section>
 
       <div className="foot-cta">

@@ -173,6 +173,126 @@ export const services: ServicePage[] = [
   },
 ];
 
+export const supportServices: ServicePage[] = [
+  {
+    slug: 'sanliurfa-rehberlik',
+    title: 'Şanlıurfa Rehberlik Hizmeti | Profesyonel Turist Rehberi — Mezo Global',
+    description:
+      'Şanlıurfa\'da profesyonel turist rehberliği: Göbeklitepe, Balıklıgöl, Kale ve tarihi çarşı turlarında uzman eşliğinde gezi.',
+    tag: 'Rehberlik Hizmeti — Şanlıurfa',
+    area: 'Şanlıurfa',
+    heroTag: 'Profesyonel Rehberlik — Şanlıurfa',
+    heroTitle: 'Şanlıurfa Rehberlik Hizmeti',
+    heroDesc:
+      'Göbeklitepe gezi programından Balıklıgöl ve tarihi çarşıya, kurumsal gruplar için lisanslı rehber eşliğinde şehir turu.',
+    problems: [
+      'Grupların tarihi bölgelerde doğru bilgiyle yönlendirilme ihtiyacı.',
+      'Çok dilli katılımcılarda rehberlik ve çeviri koordinasyonu.',
+      'Tur programının diğer etkinliklerle zamanlama uyumu.',
+    ],
+    process: [
+      { title: 'Brief', desc: 'Grup profili, dil ihtiyacı ve gezi süresi belirlenir.' },
+      { title: 'Planlama', desc: 'Rota, rehber ataması ve zamanlama kurulur.' },
+      { title: 'Koordinasyon', desc: 'Transfer ve konaklama ile senkronize edilir.' },
+      { title: 'Saha Operasyonu', desc: 'Tur boyunca kesintisiz rehberlik desteği.' },
+    ],
+    scope: [
+      'Lisanslı profesyonel rehber ataması',
+      'Göbeklitepe, Balıklıgöl, Kale turu',
+      'Çok dilli rehberlik (talebe göre)',
+      'Tarihi çarşı ve müze gezisi',
+      'Transfer ile senkronize program',
+      'Kurumsal grup rehberliği',
+    ],
+    caseStudy: {
+      meta: 'Rehberlik Hizmeti — Şanlıurfa',
+      title: 'Uluslararası Delegasyon Turu',
+      desc: 'Çok dilli bir kurumsal delegasyona, şehir merkezi ve Göbeklitepe\'yi kapsayan iki günlük rehberli tur programı sunuldu.',
+    },
+    related: ['goebeklitepe-turlari', 'havalimani-transfer'],
+    changefreq: 'monthly',
+    priority: 0.7,
+  },
+  {
+    slug: 'havalimani-transfer',
+    title: 'Şanlıurfa Havalimanı Transfer Hizmeti | Mezo Global',
+    description:
+      'GAP Havalimanı transfer hizmeti: kurumsal grup karşılama, şoförlü araç ve otel-havalimanı-etkinlik alanı koordinasyonu.',
+    tag: 'Transfer Hizmeti — Şanlıurfa',
+    area: 'Şanlıurfa',
+    heroTag: 'Havalimanı Transferi — Şanlıurfa',
+    heroTitle: 'Şanlıurfa Havalimanı Transferleri',
+    heroDesc: 'GAP Havalimanı\'ndan otel, etkinlik alanı ve şehir merkezine kesintisiz, şoförlü grup transferi.',
+    problems: [
+      'Farklı uçuşlarla gelen kalabalık grupların karşılanması.',
+      'Havalimanı-otel-etkinlik alanı arası çoklu transfer koordinasyonu.',
+      'Uçuş gecikmelerinde esnek planlama ihtiyacı.',
+    ],
+    process: [
+      { title: 'Brief', desc: 'Uçuş bilgileri ve grup büyüklüğü toplanır.' },
+      { title: 'Planlama', desc: 'Araç filosu ve şoför ataması yapılır.' },
+      { title: 'Koordinasyon', desc: 'Konaklama ve etkinlik programıyla senkronize edilir.' },
+      { title: 'Saha Operasyonu', desc: 'Karşılama ve transfer kesintisiz yürütülür.' },
+    ],
+    scope: [
+      'Havalimanı karşılama ve yönlendirme',
+      'Şoförlü araç filosu (binek/midibüs/otobüs)',
+      'Çoklu uçuş koordinasyonu',
+      'Otel ve etkinlik alanına transfer',
+      'Uçuş gecikmesi takibi',
+      'VIP karşılama hizmeti',
+    ],
+    caseStudy: {
+      meta: 'Transfer Hizmeti — Şanlıurfa',
+      title: '300 Kişilik Teknofest Katılımcı Transferi',
+      desc: 'Farklı uçuşlarla gelen 300 katılımcı, havalimanından etkinlik alanına ve konaklama noktalarına aksamadan ulaştırıldı.',
+    },
+    related: ['sanliurfa-rehberlik', 'teknofest-sanliurfa'],
+    changefreq: 'monthly',
+    priority: 0.7,
+  },
+  {
+    slug: 'sanliurfa-sira-geceleri',
+    title: 'Şanlıurfa Sıra Geceleri Organizasyonu | Mezo Global',
+    description:
+      'Geleneksel Şanlıurfa Sıra Gecesi organizasyonu: kurumsal davetler ve gruplar için otantik müzik, sohbet ve ikram deneyimi.',
+    tag: 'Kültürel Etkinlik — Şanlıurfa',
+    area: 'Şanlıurfa',
+    heroTag: 'Geleneksel Kültür Etkinliği — Şanlıurfa',
+    heroTitle: 'Şanlıurfa Sıra Geceleri',
+    heroDesc: 'UNESCO tarafından da tanınan Urfa Sıra Gecesi geleneğini kurumsal davetler için otantik bir deneyime dönüştürüyoruz.',
+    problems: [
+      'Otantik mekân ve sanatçı koordinasyonu ihtiyacı.',
+      'Kurumsal davetlerde protokol ve ağırlama hassasiyeti.',
+      'Yerel ikram ve program akışının planlanması.',
+    ],
+    process: [
+      { title: 'Brief', desc: 'Davetli sayısı ve program amacı netleştirilir.' },
+      { title: 'Planlama', desc: 'Mekân, sanatçı ve ikram programı kurulur.' },
+      { title: 'Koordinasyon', desc: 'Transfer ve konaklama ile senkronize edilir.' },
+      { title: 'Saha Operasyonu', desc: 'Gece boyunca tam saha ve ağırlama desteği.' },
+    ],
+    scope: [
+      'Otantik mekân seçimi ve kurulumu',
+      'Yerel sanatçı ve müzik programı',
+      'Geleneksel ikram organizasyonu',
+      'Davetli karşılama ve protokol',
+      'Transfer ile senkronize zamanlama',
+      'Kurumsal davet yönetimi',
+    ],
+    caseStudy: {
+      meta: 'Kültürel Etkinlik — Şanlıurfa',
+      title: 'Kurumsal Davet Gecesi',
+      desc: '80 kişilik yönetici davetinde otantik mekan, yerel müzik ve ikramla geleneksel bir Sıra Gecesi deneyimi sunuldu.',
+    },
+    related: ['urfa-gastronomi-festivali', 'sanliurfa-rehberlik'],
+    changefreq: 'monthly',
+    priority: 0.7,
+  },
+];
+
+export const allServices = [...services, ...supportServices];
+
 export const staticPages = [
   { path: '/', changefreq: 'weekly' as const, priority: 1.0 },
   { path: '/konaklama', changefreq: 'monthly' as const, priority: 0.8 },
@@ -180,5 +300,5 @@ export const staticPages = [
 ];
 
 export function getService(slug: string) {
-  return services.find((s) => s.slug === slug);
+  return allServices.find((s) => s.slug === slug);
 }
